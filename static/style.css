@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.card {
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+}
+
+.card h3 {
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 12px;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.btn-success {
+    background: #00c9a7;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #00b894;
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: #ff6b6b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ff4757;
+    transform: scale(1.05);
+}
+
+.table {
+    color: white;
+}
+
+.table-dark {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+h4 {
+    font-weight: bold;
+}
