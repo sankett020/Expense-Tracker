@@ -3,42 +3,40 @@
 
 <div class="row justify-content-center">
     <div class="col-md-10">
-        <div class="card p-4 shadow-lg">
-            <h3 class="text-center mb-4">Your Expenses</h3>
+        <div class="card p-5">
+            <h3 class="mb-4 text-center">Your Expenses</h3>
 
             {% if expenses|length == 0 %}
-                <p class="text-center">No expenses added yet.</p>
+                <p class="text-center text-muted">No expenses yet.</p>
             {% else %}
                 <div class="table-responsive">
-                    <table class="table table-bordered text-center">
-                        <thead class="table-dark">
+                    <table class="table align-middle">
+                        <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>Date</th>
                                 <th>Category</th>
                                 <th>Description</th>
-                                <th>Amount (₹)</th>
+                                <th class="text-end">Amount (₹)</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for exp in expenses %}
                             <tr>
-                                <td>{{ exp[0] }}</td>
                                 <td>{{ exp[1] }}</td>
                                 <td>{{ exp[2] }}</td>
                                 <td>{{ exp[3] }}</td>
-                                <td>₹{{ exp[4] }}</td>
+                                <td class="text-end">₹{{ exp[4] }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
                 </div>
 
-                <h4 class="text-end mt-3">Total: ₹{{ total }}</h4>
+                <h5 class="text-end mt-4">Total: ₹{{ total }}</h5>
             {% endif %}
 
-            <div class="text-center mt-3">
-                <a href="/" class="btn btn-success">Add More</a>
+            <div class="text-center mt-4">
+                <a href="/" class="btn btn-primary">Add More</a>
             </div>
         </div>
     </div>
